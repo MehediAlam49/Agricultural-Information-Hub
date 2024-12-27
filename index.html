@@ -463,8 +463,93 @@
                 </div>
             </div>
         </section>
-
            <!-- Pest Control Strategies section end -->
+
+           <!-- contact section start -->
+            <section class="contact_us my-5">
+                <!-- Section Title -->
+                <div class="text-center mb-4">
+                    <h1>Contact Us</h1>
+                    <p class="text-muted">Submit inquiries, seek advice, or request additional information.</p>
+                </div>
+                <!-- Contact Form -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <h5 class="card-title mb-4">Get in Touch</h5>
+                                <form action="/submit" method="POST" enctype="multipart/form-data">
+                                    <!-- Name Field -->
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Name</label>
+                                        <input type="text" class="form-control" id="name" name="name"
+                                            placeholder="Enter your full name" required>
+                                    </div>
+            
+                                    <!-- Email Field -->
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" name="email"
+                                            placeholder="Enter your email address" required>
+                                    </div>
+            
+                                    <!-- Message/Inquiry Field -->
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">Your Inquiry</label>
+                                        <textarea class="form-control" id="message" name="message" rows="4"
+                                            placeholder="Describe your inquiry or request" required></textarea>
+                                    </div>
+            
+                                    <!-- Expertise Dropdown -->
+                                    <div class="mb-3">
+                                        <label for="expertise" class="form-label">Expertise Level</label>
+                                        <select class="form-select" id="expertise" name="expertise" required>
+                                            <option value="">Select your expertise level</option>
+                                            <option value="beginner">Beginner</option>
+                                            <option value="intermediate">Intermediate</option>
+                                            <option value="expert">Expert</option>
+                                        </select>
+                                    </div>
+            
+                                    <!-- File Attachment -->
+                                    <div class="mb-3">
+                                        <label for="attachment" class="form-label">Attachment (optional)</label>
+                                        <input type="file" class="form-control" id="attachment" name="attachment"
+                                            accept="image/*,application/pdf">
+                                        <small class="text-muted">You can upload images or documents (max size: 5MB).</small>
+                                    </div>
+            
+                                    <!-- Submit Button -->
+                                    <div class="d-grid">
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Direct Communication Section -->
+                <div class="mt-5 text-center">
+                    <h3>Contact Agricultural Extension Services</h3>
+                    <p class="text-muted">For immediate assistance, please reach out using the contact details below:</p>
+                    <div class="d-flex justify-content-center">
+                        <div class="card shadow text-center me-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Phone</h5>
+                                <p class="card-text">+880 1772 050842</p>
+                            </div>
+                        </div>
+                        <div class="card shadow text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Email</h5>
+                                <p class="card-text">support@agriculturehelp.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- contact section end -->
 
      </main>
      <!-- Main section end -->
