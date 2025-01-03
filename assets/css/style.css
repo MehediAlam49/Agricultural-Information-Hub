@@ -1,3 +1,9 @@
+header .carousel_banner .carousel-indicators [data-bs-target] {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
 header .banner{
     background-image: url(../images/banner.jpg);
     background-size: cover;

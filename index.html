@@ -12,6 +12,7 @@
 
     <!-- Bootstrap Icons CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -29,7 +30,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-semibold">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
@@ -57,8 +58,73 @@
             </nav>
         </div>
 
+        <!-- Carousel -->
+        <div class="carousel_banner">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/images/banner.jpg" class="d-block w-100 img-fluid" alt="banner1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="heading text-center text-white">
+                                <h1 class="text-uppercase fw-bold">Agricultural Information Hub</h1>
+                                <p class="fw-semibold">
+                                    Our main goal of the organization is to reach the doorsteps of the
+                                    farmers at the grassroots level with the help of agricultural
+                                    information and technology media.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/banner2.jpg" class="d-block w-100" alt="banner2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="heading text-center text-white">
+                                <h1 class="text-uppercase fw-bold">Agricultural Information Hub</h1>
+                                <p class="fw-semibold">
+                                    Our main goal of the organization is to reach the doorsteps of the
+                                    farmers at the grassroots level with the help of agricultural
+                                    information and technology media.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/banner3.jpg" class="d-block w-100" alt="banner3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="heading text-center text-white">
+                                <h1 class="text-uppercase fw-bold">Agricultural Information Hub</h1>
+                                <p class="fw-semibold">
+                                    Our main goal of the organization is to reach the doorsteps of the
+                                    farmers at the grassroots level with the help of agricultural
+                                    information and technology media.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
         <!-- banner -->
-        <div class="banner">
+        <!-- <div class="banner">
             <div class="container">
                 <div class="heading text-center text-white">
                     <h1 class="text-uppercase fw-bold">Agricultural Information Hub</h1>
@@ -69,13 +135,13 @@
                     </p>
                 </div>
             </div>
-        </div>
+        </div> -->
     </header>
     <!-- Header end -->
 
     <!-- Main section start -->
     <main>
-        <!-- About section -->
+        <!-- Introduction section -->
         <section class="about py-5">
             <div class="container">
                 <div class="row">
@@ -83,7 +149,7 @@
                         <img src="assets/images/about.jpg" class="img-fluid" alt="about us" />
                     </div>
                     <div class="col-md-6">
-                        <h2 class="fw-bold">About Us</h2>
+                        <h2 class="fw-bold">Introduction</h2>
                         <p>
                             The Agricultural Information Hub is a platform dedicated to
                             providing farmers with valuable agricultural information and
@@ -105,103 +171,194 @@
             </div>
         </section>
 
+        <!-- Intro Details -->
+        <section class="intro_details pt-1 pb-5">
+            <div class="container">
+                <h2 class="text-center pb-2 fw-bold">Featured Sections</h2>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h3 class="card-title">Farming Guide</h3>
+                                <p class="card-text">Farming Guide is a resource designed to help individuals understand
+                                    and master various aspects of agriculture.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h3 class="card-title">Crop Details</h3>
+                                <p class="card-text">Crop Details provide essential information about specific crops,
+                                    helping farmers how to cultivate them effectively.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h3 class="card-title">Pest Control</h3>
+                                <p class="card-text">Pest Control is the practice of managing and eliminating pests that
+                                    can harm crops, livestock, or stored produce.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Farming guides section start -->
+        <!-- Farming Guides -->
         <section class="farming_guides_section">
             <div class="container">
                 <!-- Section Title -->
                 <div class="text-center mb-4">
-                    <h2 class="fw-bold text-uppercase">Farming Guide</h2>
+                    <h1>Farming Guide</h1>
                     <p class="text-muted">Explore sustainable practices, modern techniques, and expert insights for
                         successful
                         farming.</p>
-                </div>
+                </div>Guides</h2>
                 <div class="row">
-                    <div class="col-md-6 col-lg-4">
+
+                    <div class="col-lg-12">
                         <div class="card mb-3">
-                            <img src="assets/images/images.jpg" class="card-img-top" alt="img1" />
-                            <div class="card-body">
-                                <h5 class="card-title">Crop Farming</h5>
-                                <ul>
-                                    <li>Crop Selection and Planning</li>
-                                    <li>Soil Preparation</li>
-                                    <li>Planting and Maintenance</li>
-                                    <li>Harvesting and Post-Harvest Handling</li>
-                                </ul>
-                                <a href="#" class="btn btn-info">Know More</a>
+                            <div class="row g-0 align-items-center">
+                                <div class="col-md-4">
+                                    <img src="assets/images/images.jpg" class="img-fluid w-100" alt="Guide1">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Crop Farming</h4>
+                                        <p class="card-text m-0"><strong>Crop Selection and Planning: </strong>Decide
+                                            based on market demand, climate adaptability, and soil conditions.</p>
+                                        <p class="m-0"><strong>Soil Preparation Soil Preparation:</strong> Conduct soil
+                                            tests to determine fertility, pH, and texture.</p>
+                                        <p class="m-0"><strong>Planting and Maintenance:</strong> Use certified,
+                                            high-yield, and pest-resistant seeds. Precision placement of seeds using
+                                            machinery.</p>
+
+                                        <a href="#" class="btn btn-info mt-2">Read More</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-lg-12">
                         <div class="card mb-3">
-                            <img src="assets/images/guide2.jpg" class="card-img-top" alt="img2" />
-                            <div class="card-body">
-                                <h5 class="card-title">Livestock Farming</h5>
-                                <ul>
-                                    <li>Choosing Livestock</li>
-                                    <li>Housing and Facilities</li>
-                                    <li>Feeding and Nutrition</li>
-                                    <li>Health and Management</li>
-                                </ul>
-                                <a href="#" class="btn btn-info">Know More</a>
+                            <div class="row g-0 align-items-center">
+                                <div class="col-md-4">
+                                    <img src="assets/images/guide2.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Livestock Farming</h4>
+                                        <p class="m-0"><strong>Choosing Livestock:</strong> Selecting the right type of
+                                            livestock is a crucial decision</p>
+                                        <p class="m-0"><strong>Housing and Facilities:</strong> Proper housing ensures
+                                            the health and comfort of livestock, predators, and diseases.</p>
+                                        <p class="m-0"><strong>Feeding and Nutrition: </strong> Proper feeding is
+                                            essential for growth, reproduction, and productivity.</p>
+
+                                        <a href="#" class="btn btn-info mt-2">Read More</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-lg-12">
                         <div class="card mb-3">
-                            <img src="assets/images/guide3.jpg" class="card-img-top" alt="img3" />
-                            <div class="card-body">
-                                <h5 class="card-title">Sustainable Farming Techniques</h5>
-                                <ul>
-                                    <li>Organic Farming</li>
-                                    <li>Permaculture</li>
-                                    <li>Conservation Agriculture</li>
-                                </ul>
-                                <a href="#" class="btn btn-info">Know More</a>
+                            <div class="row g-0 align-items-center">
+                                <div class="col-md-4">
+                                    <img src="assets/images/guide3.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Sustainable Farming Techniques</h4>
+                                        <p class="m-0"><strong>Organic Farming: </strong> Organic farming relies on
+                                            natural inputs and practices.</p>
+                                        <p class="m-0"><strong>Permaculture: </strong> Permaculture is a holistic
+                                            approach that mimics natural ecosystems to create self-sustaining
+                                            agricultural systems.</p>
+                                        <p class="m-0"><strong>Conservation Agriculture: </strong> Conservation
+                                            agriculture focuses on maintaining and improving soil health while
+                                            minimizing environmental impact.</p>
+                                        <a href="#" class="btn btn-info mt-2">Read More</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-lg-12">
                         <div class="card mb-3">
-                            <img src="assets/images/guide4.jpg" class="card-img-top" alt="img4" />
-                            <div class="card-body">
-                                <h5 class="card-title">Aquaculture (Fish Farming)</h5>
-                                <ul>
-                                    <li>Choosing the Right Species</li>
-                                    <li>Pond and Tank Setup</li>
-                                    <li>Feeding and Health Management</li>
-                                </ul>
-                                <a href="#" class="btn btn-info">Know More</a>
+                            <div class="row g-0 align-items-center">
+                                <div class="col-md-4">
+                                    <img src="assets/images/guide4.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Aquaculture (Fish Farming)</h4>
+                                        <p class="m-0"><strong>Choosing the Right Species:</strong> Selecting the right
+                                            species is the foundation of a successful aquaculture operation.</p>
+                                        <p class="m-0"><strong>Pond and Tank Setup:</strong> Creating a suitable
+                                            environment is essential for the survival and growth of aquatic organisms.
+                                        </p>
+                                        <p class="m-0"><strong>Feeding and Health Management:</strong> Proper feeding
+                                            and health practices are critical for maximizing growth and preventing
+                                            diseases.</p>
+                                        <a href="#" class="btn btn-info mt-2">Read More</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-lg-12">
                         <div class="card mb-3">
-                            <img src="assets/images/guide5.jpg" class="card-img-top" alt="img5" />
-                            <div class="card-body">
-                                <h5 class="card-title">Agri-Technology Integration</h5>
-                                <ul>
-                                    <li>Smart Farming</li>
-                                    <li>Hydroponics and Vertical Farming</li>
-                                    <li>Solar-Powered Farming</li>
-                                </ul>
-                                <a href="#" class="btn btn-info">Know More</a>
+                            <div class="row g-0 align-items-center">
+                                <div class="col-md-4">
+                                    <img src="assets/images/guide5.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Agri-Technology Integration</h4>
+                                        <p class="m-0"><strong>Smart Farming:</strong> Smart farming involves using
+                                            Internet of Things (IoT) devices, sensors, automation, and data analytics
+                                        </p>
+                                        <p class="m-0"><strong>Hydroponics and Vertical Farming:</strong> Hydroponics
+                                            and vertical farming are cutting-edge methods of growing crops without soil
+                                        </p>
+                                        <p class="m-0"><strong>Solar-Powered Farming:</strong> Solar-powered farming
+                                            integrates solar energy systems into agricultural operations</p>
+                                        <a href="#" class="btn btn-info mt-2">Read More</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-lg-12">
                         <div class="card mb-3">
-                            <img src="assets/images/guide6.jpg" class="card-img-top" alt="img6" />
-                            <div class="card-body">
-                                <h5 class="card-title">Marketing and Economics</h5>
-                                <ul>
-                                    <li>Market Analysis</li>
-                                    <li>Value Addition</li>
-                                    <li>Online Sales and E-Commerce</li>
-                                </ul>
-                                <a href="#" class="btn btn-info">Know More</a>
+                            <div class="row g-0 align-items-center">
+                                <div class="col-md-4">
+                                    <img src="assets/images/guide6.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Marketing and Economics</h4>
+                                        <p class="m-0"><strong>Market Analysis:</strong> Market analysis is essential
+                                            for understanding demand, competition, and consumer behavior.</p>
+                                        <p class="m-0"><strong>Value Addition:</strong> Value addition refers to the
+                                            process of transforming raw agricultural products into more valuable,
+                                            market-ready
+                                            products.</p>
+                                        <p class="m-0"><strong>Online Sales and E-Commerce:</strong> With the rise of
+                                            digital technology, online sales and e-commerce platforms have become a
+                                            powerful way</p>
+                                        <a href="#" class="btn btn-info mt-2">Read More</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -505,35 +662,24 @@
                                     <!-- Name Field -->
                                     <div class="mb-3">
                                         <label for="name" class="form-label">Name</label>
-                                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name"
-                                            required>
+                                        <input type="text" class="form-control" id="name" name="name"
+                                            placeholder="Enter your full name" required>
                                     </div>
-                
+
                                     <!-- Email Field -->
                                     <div class="mb-3">
                                         <label for="email" class="form-label">Email</label>
                                         <input type="email" class="form-control" id="email" name="email"
                                             placeholder="Enter your email address" required>
                                     </div>
-                
+
                                     <!-- Message/Inquiry Field -->
                                     <div class="mb-3">
                                         <label for="message" class="form-label">Your Inquiry</label>
                                         <textarea class="form-control" id="message" name="message" rows="4"
                                             placeholder="Describe your inquiry or request" required></textarea>
                                     </div>
-                
-                                    <!-- Expertise Dropdown -->
-                                    <div class="mb-3">
-                                        <label for="expertise" class="form-label">Expertise Level</label>
-                                        <select class="form-select" id="expertise" name="expertise" required>
-                                            <option value="">Select your expertise level</option>
-                                            <option value="beginner">Beginner</option>
-                                            <option value="intermediate">Intermediate</option>
-                                            <option value="expert">Expert</option>
-                                        </select>
-                                    </div>
-                
+
                                     <!-- File Attachment -->
                                     <div class="mb-3">
                                         <label for="attachment" class="form-label">Attachment (optional)</label>
@@ -542,7 +688,7 @@
                                         <small class="text-muted">You can upload images or documents (max size:
                                             5MB).</small>
                                     </div>
-                
+
                                     <!-- Submit Button -->
                                     <div class="d-grid">
                                         <button type="submit" class="btn btn-primary">Submit</button>
@@ -555,7 +701,8 @@
                     <div class="col-md-6">
                         <div class="mt-4">
                             <h3>Contact Agricultural Extension Services</h3>
-                            <p class="text-muted">For immediate assistance, please reach out using the contact details below:</p>
+                            <p class="text-muted">For immediate assistance, please reach out using the contact details
+                                below:</p>
                             <div class="d-flex justify-content-center">
                                 <div class="card shadow text-center me-3">
                                     <div class="card-body">
@@ -584,16 +731,21 @@
         <div class="container">
             <!-- Social Media Section -->
             <div class="d-flex justify-content-center mt-4">
-                <a href="https://www.facebook.com/MehediAlam49/" class="text-light me-3"><i class="bi bi-facebook fs-4"></i></a>
-                <a href="https://twitter.com/MehediAlam49" class="text-light me-3"><i class="bi bi-twitter fs-4"></i></a>
-                <a href="https://www.instagram.com/mehedialam_49/" class="text-light me-3"><i class="bi bi-instagram fs-4"></i></a>
-                <a href="https://www.linkedin.com/in/mehedialam49/" class="text-light"><i class="bi bi-linkedin fs-4"></i></a>
+                <a href="https://www.facebook.com/MehediAlam49/" class="text-light me-3"><i
+                        class="bi bi-facebook fs-4"></i></a>
+                <a href="https://twitter.com/MehediAlam49" class="text-light me-3"><i
+                        class="bi bi-twitter fs-4"></i></a>
+                <a href="https://www.instagram.com/mehedialam_49/" class="text-light me-3"><i
+                        class="bi bi-instagram fs-4"></i></a>
+                <a href="https://www.linkedin.com/in/mehedialam49/" class="text-light"><i
+                        class="bi bi-linkedin fs-4"></i></a>
             </div>
 
             <!-- Footer Bottom -->
             <div class="text-center mt-4">
-                <p class="mb-0">&copy; 2024 Agriculture Help, Developed by <a href="https://www.facebook.com/MehediAlam49/"
-                        class="text-decoration-none text-info">Mehedi Alam</a>. All Rights Reserved.</p>
+                <p class="mb-0">&copy; 2024 Agriculture Help, Developed by <a
+                        href="https://www.facebook.com/MehediAlam49/" class="text-decoration-none text-info">Mehedi
+                        Alam</a>. All Rights Reserved.</p>
             </div>
         </div>
 
