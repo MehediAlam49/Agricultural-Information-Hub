@@ -5,15 +5,27 @@ header .carousel_banner .carousel-indicators [data-bs-target] {
 }
 
 header .banner{
-    background-image: url(../images/banner.jpg);
+    /* background-image: url(../images/banner.jpg); */
     background-size: cover;
     background-position: center center;
-    height: 50vh;
+    height: 32vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+header .farming_guides_banner{
+  background-image: url(../images/innerBanner1.jpg);
+}
+header .crop_details_banner{
+  background-image: url(../images/innerBanner2.jpg);
+}
+header .pest_control_banner{
+  background-image: url(../images/innerBanner3.jpg);
+}
+header .contact_us_banner{
+  background-image: url(../images/innerBanner4.jpg);
+}
 /* Scroll to Top Button Styles */
 .scroll-to-top {
   position: fixed;
